@@ -1,0 +1,14 @@
+# Core runtime dependencies for the bundled Ultralytics-compatible YOLOv12 code.
+torch>=2.0.0
+torchvision>=0.15.0
+numpy>=1.23.0
+opencv-python>=4.6.0
+PyYAML>=5.3.1
+requests>=2.23.0
+scipy>=1.4.1
+matplotlib>=3.3.0
+pillow>=7.1.2
+psutil>=5.8.0
+py-cpuinfo>=9.0.0
+polars>=0.20.0
+ultralytics-thop>=2.0.18

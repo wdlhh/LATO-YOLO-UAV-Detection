@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lato-yolo-complete"
+version = "0.1.0"
+description = "Complete LATO-YOLO implementation: YOLOv12 + AFPN + UTGhostConv + HPL"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "AGPL-3.0"}
+dependencies = [
+  "torch>=2.0.0",
+  "torchvision>=0.15.0",
+  "numpy>=1.23.0",
+  "opencv-python>=4.6.0",
+  "PyYAML>=5.3.1",
+  "requests>=2.23.0",
+  "scipy>=1.4.1",
+  "matplotlib>=3.3.0",
+  "pillow>=7.1.2",
+  "psutil>=5.8.0",
+  "py-cpuinfo>=9.0.0",
+  "polars>=0.20.0",
+  "ultralytics-thop>=2.0.18",
+]
+
+[tool.setuptools.packages.find]
+include = ["ultralytics*"]
