@@ -160,11 +160,3 @@ HPL           -> ultralytics/utils/lato_loss.py::HPLDetectionLoss
 模型解析接入    -> ultralytics/nn/tasks.py
 完整模型 YAML   -> configs/lato-yolo.yaml
 ```
-
-更详细的方法—代码对应关系见 `docs/IMPLEMENTATION_NOTES.md`。
-
-## 说明
-
-论文给出了三项改进的总体结构、通道比例和损失组合，但未公开所有仓库级工程细节，例如精确的 YOLOv12 提交版本、UTGhostConv 替换的每一个层号、全部 AFPN 通道宽度以及全部 WIoU-v3 常数。因此，本代码包对这些未明确项采用了可运行、可复现实验的工程实现，并将关键选择集中在 YAML 和模块参数中，便于后续按作者真实训练记录进一步对齐。
-
-本项目中打包的 Ultralytics 源码遵循其 AGPL-3.0 许可证，许可证文本见 `LICENSE-ULTRALYTICS.txt`。
